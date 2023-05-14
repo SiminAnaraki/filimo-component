@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="assets/css/fontawesome.css"/>
+    <link rel="stylesheet" href="assets/css/solid.css"/>
+    <title>filimo</title>
+</head>
+<body>
+    <div id="root">
+        
+    </div>
+    <script src="https://unpkg.com/react@17.0.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17.0.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone@7.12.4/babel.js"></script>
+    <script type="text/babel">
+        var rootElement = document.getElementById("root");
+        var firstList = [
+            {
+                imageUrl : "assets/images/raha.jpg",
+                url : "https://www.filimo.com/m/131383",
+            },
+            {
+                imageUrl : "assets/images/new.jpg",
+                url : "https://www.filimo.com/m/133827",
+            },
+            {
+                imageUrl : "assets/images/actor.jpg" ,
+                url : "https://www.filimo.com/m/130789",
+            },
+            {
+                imageUrl :  "assets/images/memuni.jpg",
+                url : "https://www.filimo.com/m/132691",
+            },
+            {
+                imageUrl :  "assets/images/div.jpg",
+                url : "https://www.filimo.com/m/131941" ,
+            },
+            {
+                imageUrl :"assets/images/tnt.jpg", 
+                url : "https://www.filimo.com/m/132689",
+            },
+        ]
+        var secondList = [
+            {
+                imageUrl : "assets/images/paytakht.jpg",
+                url : "https://www.filimo.com/m/131383",
+            },
+            {
+                imageUrl : "assets/images/ayne.jpg",
+                url : "https://www.filimo.com/m/133827",
+            },
+            {
+                imageUrl : "assets/images/sonami.jpg" ,
+                url : "https://www.filimo.com/m/130789",
+            },
+            {
+                imageUrl :  "assets/images/mamuriat.jpg",
+                url : "https://www.filimo.com/m/132691",
+            },
+            {
+                imageUrl :  "assets/images/bevaghtesham.jpg",
+                url : "https://www.filimo.com/m/131941" ,
+            },
+            {
+                imageUrl :"assets/images/aghrab.jpg", 
+                url : "https://www.filimo.com/m/132689",
+            },
+        ]
+        var thirdList = [
+            {
+                imageUrl : "assets/images/raha.jpg",
+                url : "https://www.filimo.com/m/131383",
+            },
+            {
+                imageUrl : "assets/images/new.jpg",
+                url : "https://www.filimo.com/m/133827",
+            },
+            {
+                imageUrl : "assets/images/actor.jpg" ,
+                url : "https://www.filimo.com/m/130789",
+            },
+            {
+                imageUrl :  "assets/images/memuni.jpg",
+                url : "https://www.filimo.com/m/132691",
+            },
+            {
+                imageUrl :  "assets/images/div.jpg",
+                url : "https://www.filimo.com/m/131941" 
+            },
+            {
+                imageUrl :"assets/images/tnt.jpg", 
+                url : "https://www.filimo.com/m/132689",
+            },
+        ]
+        var withTv1 = [
+            {
+                image : "assets/images/how_see.png",
+                link : "https://www.aparat.com/video/video/embed/videohash/7uROr/vt/frame?autoplay=true&autoplay=true&hidePIP&hideGoTheater",
+                caption :"فیلیمو باکس چیست . چه امکاناتی دارد؟"
+            
+            },
+            {
+                image : "assets/images/what_box.png",
+                link : "https://www.aparat.com/video/video/embed/videohash/KEW8c/vt/frame?autoplay=true&autoplay=true&hidePIP&hideGoTheater",
+                caption : "چطور با فیلیمو باکس فیلم تماشا کنیم؟",
+            
+            },
+            {
+                image : "assets/images/how_set.png",
+                link : "https://www.aparat.com/video/video/embed/videohash/5du7V/vt/frame?autoplay=true&autoplay=true&hidePIP&hideGoTheater",
+                caption : "چطور با کنترل فیلیمو باکس کار کنیم؟",
+            
+            },
+         ]
+             var withTv2 = [
+            {
+                image : "assets/images/androidtv-bg.png",
+                link : "https://www.aparat.com/video/video/embed/videohash/NLHWY/vt/frame?autoplay=true&autoplay=true&hidePIP&hideGoTheater",
+                caption : "چطور فیلیمو را روی تلویزیون نصب کنیم؟",
+            
+            },
+            {
+                image : "assets/images/LG-tv.png",
+                link : "https://www.aparat.com/video/video/embed/videohash/hg1TZ/vt/frame?autoplay=true&autoplay=true&hidePIP&hideGoTheater",
+                caption : "برای تماشا روی تلویزیون ال جی چکار کنیم؟",
+            
+            },
+            {
+                image : "assets/images/cable-bg.png",
+                link : "https://www.aparat.com/video/video/embed/videohash/l78K9/vt/frame?autoplay=true&autoplay=true&hidePIP&hideGoTheater",
+                caption : "چطور با  تلویریون قدیمی فیلیمو تماشا کنیم؟",
+            
+            },
+        ]
+        var withTv3 = [
+            {
+                image : "assets/images/cast-bg.png",
+                link : "https://www.aparat.com/video/video/embed/videohash/UhCDR/vt/frame?autoplay=true&autoplay=true&hidePIP&hideGoTheater",
+                caption : "روش آینه کردن یعنی چه و چطور انجام دهیم؟",
+            
+            },
+            {
+                image : "assets/images/smart-bg.png",
+                link : "https://www.aparat.com/video/video/embed/videohash/DCeB1/vt/frame?autoplay=true&autoplay=true&hidePIP&hideGoTheater",
+                caption : "روش کست  یعنی چه و چطور انجامش بدهیم؟",
+            
+            },
+            {
+                image : "assets/images/miro-bg.png",
+                link : "https://www.aparat.com/video/video/embed/videohash/4Cold/vt/frame?autoplay=true&autoplay=true&hidePIP&hideGoTheater",
+                caption : "چطور با جستجو در مرورگر  فیلیمو تماشا کنیم؟",
+            
+            },
+        ]
+        
+        
+        function PopularFilms(props) {
+            return props.data.map(function(ajib) {
+                return (
+                    <li>
+                    <div className = "layer">
+                        <a href = {ajib.url}>
+                            <img src = {ajib.imageUrl}/>
+                        </a>
+                    </div>
+                    </li>
+                       )
+                } )   
+             } 
+        function Watch(props) {
+            return props.data.map(function(gharib) {
+                return (
+                    <li>
+                        <a href = {gharib.link}>
+                            <img src = {gharib.image}/>
+                            <h5>{gharib.caption}</h5>
+                        </a>
+                    </li>
+                )
+            })
+        }
+
+        var element = ( <div className = "container">
+                            <div className = "films">
+                                <h2 className = "title" > محبوب‌ترین‌های فیلیمو اولین</h2>
+                                <ul>
+                                    <PopularFilms data = {firstList} ></PopularFilms>
+                                </ul>
+                                <h2 className = "title" >  محبوب‌ترین‌های فیلیمو دومین</h2>
+                                <ul>
+                                    <PopularFilms data = {secondList} ></PopularFilms>
+                                </ul>
+                                <h2 className = "title" >  محبوب‌ترین‌های فیلیمو سومین</h2>
+                                <ul>
+                                    <PopularFilms data = {thirdList} ></PopularFilms>
+                                </ul>
+                                <hr/>
+                            </div>
+                            <div className = "tamasha">
+                                <div className="first">
+                                    <h1 className = "title">فیلیمو‌باکس چیست؟</h1>
+                                    <p classNam = "description">برای تماشای فیلیمو، تلویزیون شما باید هوشمند باشد، اگر نیست، با تهیه یک اندروید باکس، تلویزیون خود را هوشمند کنید، ما به شما فیلیمو باکس را پیشنهاد می‌کنیم که به تلویزیون وصل می‌شود و آن را هوشمند می‌کند. چطوری؟ کافیست ویدیو‌های زیر را تماشا‌کنید.</p>
+                                    <div className="info">
+                                        <h4 className = "more-info">اطلاعات بیشتر </h4>
+                                        <i class="fa-solid fa-arrow-left-long"></i>
+                                    </div>
+                                    <ul>
+                                        <Watch data = {withTv1}></Watch>
+                                    </ul>
+                                </div>
+                                <div className="second">
+                                    <h2 className = "title"></h2>
+                                    <p classNam = "description"></p>
+                                    <h5 className = "more-info"></h5>
+                                    <ul>
+                                        <Watch data = {withTv2}></Watch>
+                                    </ul>
+                                </div>
+                                <div className="third">
+                                    <h2 className = "title"></h2>
+                                    <p classNam = "description"></p>
+                                    <h3 className = "more-info"></h3>
+                                    <ul>
+                                        <Watch data = {withTv3}></Watch>
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        )
+        ReactDOM.render(element, rootElement)
+    </script> 
+</body>
+</html>
